@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="C:\Users\david\Desktop\VIRUS\DOM\dom class\Font-Awesome-master\css\all.css">
+    <script src="js/jquery.min.js.js"></script>
+    <script src="js/proper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    
+</head>
+<body>
+    <!-- A modal is a pop up window that displays at d top of a current page -->
+    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal">
+        open Modal
+    </button>
+
+    <div class="modal mt-5 fade" id="modal"> 
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <!-- modal Header -->
+                <div class="modal-header">
+                    <h3 class="modal-title">
+                        Modal Heading
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- modal Body -->
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quisquam enim quos qui ab quasi harum error vitae officiis. Atque?
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- tool tip is a pop up shown as soon as mouse hover an element -->
+    <a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!!!">Hover</a>
+    <a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!!!">Hover</a>
+    <a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!!!">Hover</a>
+    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!!!">Hover</a>
+    <script>
+        // jquery using tooltip
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+</html>
